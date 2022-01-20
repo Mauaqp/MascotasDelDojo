@@ -2,8 +2,9 @@ from Ninja import Ninja
 from Mascota import Mascota
 
 #Instrucciones
-ninja1 = Ninja("Mauri", "Peraltilla", "Galleto", "Galletita", "Hueso")
-mascota1 = Mascota("Milly", "Perrito", "Galletitas ricas", "100", "50")
-mascota2 = Mascota("Brownie", "Perrito", "Galletitas de pollito", "100", "100")
+mascota1 = Mascota("Milly", "Perrito", "Galletitas", 100, 20)
+mascota2 = Mascota("Brownie", "Perrito", "Galletitas de pollito", 200, 100)
+ninja1 = Ninja("Mauri", "Peraltilla", mascota1, "Galletita", "Hueso")
 ninja1.getNombre()
-ninja1.caminar(0).alimentar(0).bañar(1)
+ninja1.caminar(0).alimentar(0).bañar(0)
+mascota1.estado_mascota()
